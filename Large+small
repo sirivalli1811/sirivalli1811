@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+int a, b, c;
+int largest, smallest, sum;
+// Input three numbers
+printf("Enter three numbers: ");
+scanf("%d %d %d", &a, &b, &c);
+// Find the largest using ternary operator
+largest = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+// Find the smallest using ternary operator
+smallest = (a < b) ? ((a < c) ? a : c) : ((b < c) ? b : c);
+// Add them
+sum = largest + smallest;
+// Output
+printf("Largest: %d\n", largest);
+printf("Smallest: %d\n", smallest);
+printf("Sum of largest and smallest: %d\n", sum);
+    return 0;
+}
