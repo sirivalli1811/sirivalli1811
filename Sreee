@@ -1,0 +1,26 @@
+include<stdio.h>
+int main() {
+int startBlocks, starsPerLine;
+// Input from user
+printf("Enter the number of blocks: ");
+scanf("%d", &startBlocks);
+printf("Enter the number of stars per line: ");
+scanf("%d", &starsPerLine);
+// Loop through blocks
+for (int block = startBlocks; block >= 1; block--) 
+{
+int totalStars = block * starsPerLine;
+printf("Block %d - Total stars: %d\n"startBlocks - block + 1, totalStars);
+
+// Print each line of stars
+for (int i = 0; i < block; i++)
+{
+for (int j=0;j<starsPerLine; j++) {
+printf("*");
+}
+printf("\n");
+}
+printf("\n"); // Blank line between blocks
+}
+return 0;
+}
